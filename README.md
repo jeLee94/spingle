@@ -1,5 +1,5 @@
 <div align="center">
-![header](https://capsule-render.vercel.app/api?type=waving&color=66cc99&height=100&section=header&text=스마트%20핀치%20글러브%20및%20기능성%20콘텐츠%20개발&fontSize=30)
+![header](https://capsule-render.vercel.app/api?type=waving&color=0099cc&height=100&section=header&text=스마트%20핀치%20글러브%20및%20기능성%20콘텐츠%20개발&fontSize=30)
 <!-- <h1>스마트 핀치 글러브 및 기능성 콘텐츠 개발</h1><br> -->
 
 <h3>프로젝트 소개</h3>
@@ -34,4 +34,4 @@
 <h4>통신 프로토콜</h4>
 <img width="50%" src="/uploads/7f63bf64b3bc191e77f97e5e902053b5/통신프로토콜.png"/><br><br>
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=auto&height=100&section=footer)
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0099cc&height=100&section=footer)
