@@ -23,7 +23,9 @@
 <h3>하드웨어 소개</h3><br>
 <h4>하드웨어 프로토타입</h4>
 <img width="50%" src="/uploads/95dde93e79a1da33b637fcc69f780cf2/hw소개4.png"/><br><br>
-<h4>PCB 디자인</h4>
+<h4>PCB ArtWork</h4>
+<img width="20%" src="/uploads/e3677ab7d38f8d32cc2a41d419981a78/hw소개3.png"/><br><br>
+<h4>PCB 제작</h4>
 <img width="50%" src="/uploads/b6f40e0ebbc9aca398551fe8fee5e5a6/hw소개10.png"/><br><br>
 <h4>FSR센서 상세</h4>
 <img width="50%" src="/uploads//733e37cdcf509e82fe5d5342f09bdff7/hw소개5.png"/><br><br>
