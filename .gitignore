@@ -79,21 +79,3 @@ crashlytics-build.properties
 #라이브러리, 에셋 무시
 /*/Library/
 /*/Assets/PaidAssets/
-
-
-#정은- 페그보드, 풍선
-/PegBoard/Library/
-/PegBoard/Assets/PaidAssets/
-/Balloon/Library/
-/Balloon/Assets/PaidAssets/
-
-#동재
-/PinchGlove_MaxPower/Assets/PaidAssets/
-/PinchGlove_MaxPower/Library/
-/SmartPinchGlove/Assets/PaidAssets/
-/SmartPinchGlove/Assets/test/
-/SmartPinchGlove/Library/
-/VRBeat/Assets/Particle Ingredient Pack/
-
-#재홍
-/arrow_vr_proj/Assets/Polyart
