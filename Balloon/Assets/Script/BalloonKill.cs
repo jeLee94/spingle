@@ -43,10 +43,39 @@ public class BalloonKill : MonoBehaviour
         audioSource = this.GetComponent<AudioSource>();
     }
 
+    IEnumerator killball(int count)
+    {
+        isKilling = true;
+        Pop[count].GetComponent<ParticleSystem>().Play();
+        babyballs[count].gameObject.SetActive(false);
+
+        while (true)
+        {
+            if (count >= babyballs.Length - 1)
+            {
+                isPlaying = false;
+            }
+
+
+            if (Inputdata.index_F < 50)
+            {
+                ballcount++;
+                isKilling = false;
+                break;
+
+            }
+
+
+            yield return null;
+        }
+        yield return null;
+    }
+
 
 
     public void Update()
     {
+
         // 여기부터 아래 손보고있습니당~~
         if (isPlaying)
         {
@@ -54,11 +83,15 @@ public class BalloonKill : MonoBehaviour
             idleTime[ballcount] += Time.deltaTime;
         }
 
+        
+
+    }
+
 
         if (Inputdata.index_F >= 50 && !isKilling)
         //if (Input.GetKeyDown(KeyCode.B) && !isKilling)
         {
-            
+            StartCoroutine(killball(ballcount));
             audioSource.PlayOneShot(popSound);
         }
         //if (ballcount < babyballs.Length - 1)
