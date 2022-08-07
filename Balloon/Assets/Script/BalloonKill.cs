@@ -24,11 +24,40 @@ public class BalloonKill : MonoBehaviour
         
     }
 
+    IEnumerator killball(int count)
+    {
+        isKilling = true;
+        Pop[count].GetComponent<ParticleSystem>().Play();
+        babyballs[count].gameObject.SetActive(false);
+
+        while (true)
+        {
+            if (count >= babyballs.Length - 1)
+            {
+                isPlaying = false;
+            }
+
+
+            if (Inputdata.index_F < 50)
+            {
+                ballcount++;
+                isKilling = false;
+                break;
+
+            }
+
+
+            yield return null;
+        }
+        yield return null;
+    }
+
 
 
     public void Update()
     {
-      
+        StartCoroutine(killball(ballcount));
+
     }
 
 
