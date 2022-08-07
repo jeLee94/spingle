@@ -18,19 +18,55 @@ public class BalloonKill : MonoBehaviour
     public AudioClip popSound;
     public AudioSource audioSource;
 
+    public GameObject[] getPop(GameObject parent)
+    {
+        GameObject[] children = new GameObject[parent.transform.childCount];
+        for (int i = 0; i < parent.transform.childCount; i++)
+        {
+            children[i] = parent.transform.GetChild(i).gameObject;
+        }
+        return children;
+    }
+
 
     void Start()
     {
-        
+        Balloons = GameObject.FindWithTag("Balloons");
+        POP = GameObject.FindWithTag("POP");
+        babyballs = getBalls(Balloons);
+        playTime = 0f;
+        isKilling = false;
+        ballcount = 0;
+        idleTime = new float[babyballs.Length];
+        Pop = getPop(POP);
+        isPlaying = true;
+        audioSource = this.GetComponent<AudioSource>();
     }
 
 
 
     public void Update()
     {
-      
-    }
+        // 여기부터 아래 손보고있습니당~~
+        if (isPlaying)
+        {
+            playTime += Time.deltaTime;
+            idleTime[ballcount] += Time.deltaTime;
+        }
 
+
+        if (Inputdata.index_F >= 50 && !isKilling)
+        //if (Input.GetKeyDown(KeyCode.B) && !isKilling)
+        {
+            
+            audioSource.PlayOneShot(popSound);
+        }
+        //if (ballcount < babyballs.Length - 1)
+        //{
+        //    idleTime[ballcount] += Time.deltaTime;
+        //}
+
+    }
 
 }
 //탭간격(o), (10/전체시간)Hz, 파티클(O)
